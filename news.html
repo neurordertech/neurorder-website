@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>News & Insights | Neurorder</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylenews.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html">
+    <img src="NeurorderBody.png" alt="Neurorder Logo" class="nav-logo">
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="credit-scoring.html">Credit Scoring</a>
+    <a href="foundation.html">Foundation</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<div class="mobile-menu-panel" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="credit-scoring.html">Credit Scoring</a>
+  <a href="foundation.html">Foundation</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="news-app">
+
+  <aside class="news-sidebar">
+    <h2>Neurorder</h2>
+
+    <a>Home Feed</a>
+    <a>National News</a>
+    <a>Global DPI</a>
+    <a>Research Updates</a>
+    <a>Community</a>
+
+    <div class="sidebar-symbols">
+      <a href="https://commons.wikimedia.org/wiki/File:Rotating_earth_animated_transparent.gif" target="_blank" class="gif-credit">
+        <img src="earth.gif" alt="Rotating Earth">
+      </a>
+
+      <a href="https://sdgs.un.org/goals" target="_blank" class="gif-credit">
+        <img src="sdg.png" alt="UN Sustainable Development Goals">
+      </a>
+
+      <a href="https://www.gov.za/about-sa/national-symbols" target="_blank" class="gif-credit">
+        <img src="rsaflag.png" alt="South African Flag">
+      </a>
+    </div>
+  </aside>
+
+  <main class="news-feed">
+
+    <div class="feed-header">
+      <h1>News & Insights</h1>
+
+      <p>
+        Global and national updates on economy, digital public infrastructure,
+        financial inclusion, and Neurorder research.
+      </p>
+
+      <select id="newsFilter" onchange="filterNews()">
+        <option value="all">All</option>
+        <option value="news24">News24</option>
+        <option value="undp">UNDP</option>
+        <option value="neurorder">Neurorder Updates</option>
+      </select>
+    </div>
+
+    <div class="news-ticker">
+      <div class="ticker-track">
+        <span>News24: Municipal debt and Eskom pressure</span>
+        <span>UNDP: Digital Public Infrastructure and financial inclusion</span>
+        <span>Neurorder: Research updates on informal economy credit scoring</span>
+        <span>South Africa: Economy, AI, DPI, and youth innovation</span>
+      </div>
+    </div>
+
+    <div class="weather-ticker">
+      <div class="ticker-track slow">
+        <span>South Africa Weather V1</span>
+        <span>Cape Town 16°C</span>
+        <span>Johannesburg 13°C</span>
+        <span>Durban 21°C</span>
+        <span>Pretoria 14°C</span>
+        <span>Local time coming soon</span>
+      </div>
+    </div>
+
+    <section class="news-card-grid">
+
+      <article class="news-card" data-source="news24">
+        <div class="news-image news24-image"></div>
+
+        <div class="news-card-body">
+          <span class="source-label">News24 Business</span>
+
+          <h3>Municipal Debt and Eskom Pressure</h3>
+
+          <p>
+            A national economy update connected to Eskom, municipalities,
+            public debt, and South Africa's financial risk.
+          </p>
+
+          <a href="https://www.news24.com/business/economy/somebody-has-to-pay-sp-worried-about-r130bn-municipal-debt-to-eskom-20260606-1067" target="_blank">
+            Read Article →
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-source="undp">
+        <div class="news-image undp-image"></div>
+
+        <div class="news-card-body">
+          <span class="source-label">UNDP Digital</span>
+
+          <h3>Digital Public Infrastructure</h3>
+
+          <p>
+            DPI connects identity, payments, and data exchange systems to
+            support inclusive digital transformation.
+          </p>
+
+          <a href="https://www.undp.org/digital/digital-public-infrastructure" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-source="neurorder">
+        <div class="news-image neurorder-image"></div>
+
+        <div class="news-card-body">
+          <span class="source-label">Neurorder Updates</span>
+
+          <h3>Research and Credit Scoring Progress</h3>
+
+          <p>
+            Updates on Neurorder Research, alternative credit scoring,
+            foundation work, and South African innovation.
+          </p>
+
+          <a href="research.html">View Research →</a>
+        </div>
+      </article>
+
+      <article class="news-card" data-source="news24">
+        <div class="news-image economy-image"></div>
+
+        <div class="news-card-body">
+          <span class="source-label">National Economy</span>
+
+          <h3>South Africa Economy Watch</h3>
+
+          <p>
+            Monitoring national economic issues that affect infrastructure,
+            business growth, and community development.
+          </p>
+
+          <a href="https://www.news24.com/business" target="_blank">
+            Visit News24 →
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-source="undp">
+        <div class="news-image global-image"></div>
+
+        <div class="news-card-body">
+          <span class="source-label">Global DPI</span>
+
+          <h3>Global Digital Systems</h3>
+
+          <p>
+            Following global digital transformation, DPI policy, data systems,
+            and inclusion frameworks.
+          </p>
+
+          <a href="https://www.undp.org/digital" target="_blank">
+            Visit UNDP Digital →
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-source="neurorder">
+        <div class="news-image community-image"></div>
+
+        <div class="news-card-body">
+          <span class="source-label">Community</span>
+
+          <h3>Neurorder Discussion Space</h3>
+
+          <p>
+            A future community layer where users will discuss national and global
+            issues shaping digital inclusion.
+          </p>
+
+          <a href="#">Coming Soon →</a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <aside class="trending-panel">
+    <h3>Trending Topics</h3>
+    <p>#DigitalPublicInfrastructure</p>
+    <p>#SouthAfricaEconomy</p>
+    <p>#FinancialInclusion</p>
+    <p>#InformalEconomy</p>
+    <p>#NeurorderResearch</p>
+  </aside>
+
+</section>
+
+<script>
+function toggleMobileMenu() {
+  document.getElementById("mobileMenu").classList.toggle("open");
+  document.querySelector(".mobile-menu-btn").classList.toggle("active");
+}
+
+function filterNews() {
+  const selected = document.getElementById("newsFilter").value;
+  const cards = document.querySelectorAll(".news-card");
+
+  cards.forEach(card => {
+    if (selected === "all" || card.dataset.source === selected) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
+
+</body>
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+class="footer-logo">
+
+<h2>NEURORDER</h2>
+
+<p>
+New Order.<br>
+Smarter Future.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Research</h3>
+
+<a href="research.html">Digital Public Infrastructure</a>
+
+<a href="credit-scoring.html">Credit Scoring</a>
+
+<a href="news.html">Latest Research</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Company</h3>
+
+<a href="about.html">About</a>
+
+<a href="foundation.html">Foundation</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Resources</h3>
+
+<a href="#">Privacy Policy</a>
+
+<a href="#">Terms</a>
+
+<a href="#">Careers</a>
+
+</div>
+
+</div>
+
+<div class="footer-divider"></div>
+
+<div class="footer-bottom">
+
+<div class="footer-socials">
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-medium-m"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+<a href="#"><i class="fas fa-rss"></i></a>
+
+</div>
+
+<p class="footer-copy">
+© 2026 Neurorder Research. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+</html>

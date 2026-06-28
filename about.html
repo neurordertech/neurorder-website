@@ -1,0 +1,213 @@
+<html lang="en">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Neurorder</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html">
+    <img src="NeurorderBody.png" alt="Neurorder Logo" class="nav-logo">
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="credit-scoring.html">Credit Scoring</a>
+    <a href="foundation.html">Foundation</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<div class="mobile-menu-panel" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="credit-scoring.html">Credit Scoring</a>
+  <a href="foundation.html">Foundation</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="about-hero">
+  <div class="about-bg" id="aboutBg"></div>
+
+  <div class="about-text">
+    <h1>The Founders</h1>
+    <p>Scroll to Read More</p>
+  </div>
+</section>
+
+<section class="about-story">
+  <h2>About the Founders</h2>
+
+  <p>
+    Neurorder was founded by Ntokozo Mzekandaba alongside Isaac Kimu and Bruno Elias.
+    The company represents a new generation of South African thinkers building toward
+    the digital age.
+  </p>
+
+  <p>
+    Our mission is to create a paradigm shift in South Africa through research,
+    digital public infrastructure, alternative credit scoring, and community-focused
+    innovation aligned with the 2030 Agenda.
+  </p>
+</section>
+
+<section class="team-section-test">
+  <h2>Business Team</h2>
+
+  <div class="team-grid-test">
+    <div class="team-card-test">
+      <div class="test-frame"></div>
+      <p>ID: Ntokozo Mzekandaba</p>
+    </div>
+
+    <div class="team-card-test">
+      <div class="test-frame"></div>
+      <p>ID: Isaac Kimu</p>
+    </div>
+
+    <div class="team-card-test">
+      <div class="test-frame"></div>
+      <p>ID: Bruno Elias</p>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleMobileMenu() {
+  document.getElementById("mobileMenu").classList.toggle("open");
+  document.querySelector(".mobile-menu-btn").classList.toggle("active");
+}
+
+window.addEventListener("scroll", function () {
+  let scrollAmount = window.scrollY;
+  let blurValue = Math.max(0, 10 - scrollAmount / 60);
+
+  document.getElementById("aboutBg").style.filter =
+    "blur(" + blurValue + "px)";
+});
+</script>
+
+<script>
+
+function toggleMobileMenu(){
+document.getElementById("mobileMenu").classList.toggle("open");
+document.querySelector(".mobile-menu-btn").classList.toggle("active");
+}
+
+window.addEventListener("scroll",function(){
+
+let scrollAmount=window.scrollY;
+let blurValue=Math.max(0,10-scrollAmount/60);
+
+document.getElementById("aboutBg").style.filter=
+"blur("+blurValue+"px)";
+
+});
+
+</script>
+
+<!-- FOOTER START -->
+
+<footer class="site-footer">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+
+<img src="logo.png" class="footer-logo">
+
+<h2>NEURORDER</h2>
+
+<p>
+New Order.<br>
+Smarter Future.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Research</h3>
+
+<a href="research.html">Digital Public Infrastructure</a>
+
+<a href="credit-scoring.html">Credit Scoring</a>
+
+<a href="news.html">Latest Research</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Company</h3>
+
+<a href="about.html">About</a>
+
+<a href="foundation.html">Foundation</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Legal</h3>
+
+<a href="documents/NEURORDER_Legal_Documents.pdf#page=1" target="_blank">
+Privacy Policy
+</a>
+
+<a href="documents/NEURORDER_Legal_Documents.pdf#page=7" target="_blank">
+Terms & Conditions
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-divider"></div>
+
+<div class="footer-bottom">
+
+<div class="footer-socials">
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-medium-m"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+<a href="#"><i class="fas fa-rss"></i></a>
+
+</div>
+
+<p class="footer-copy">
+© 2026 Neurorder (Pty) Ltd. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
