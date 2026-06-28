@@ -1,0 +1,178 @@
+<html>
+<head>
+  <title>Neurorder</title>
+  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<body>
+
+<header class="site-header">
+  <a href="index.html">
+    <img src="NeurorderBody.png" alt="Neurorder Logo" class="nav-logo">
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="credit-scoring.html">Credit Scoring</a>
+    <a href="foundation.html">Foundation</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<div class="mobile-menu-panel" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="credit-scoring.html">Credit Scoring</a>
+  <a href="foundation.html">Foundation</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="hero">
+  <h1>Welcome to Neurorder</h1>
+  <p>New Order. Smarter Future.</p>
+</section>
+
+<section class="content">
+  <h2>Who We Are</h2>
+
+  <p>
+    Neurorder is a South African research and technology company focused on digital public infrastructure,
+    alternative credit scoring, financial inclusion, and community development.
+  </p>
+
+  <p>
+    We build practical systems that connect underserved communities to opportunity through research,
+    innovation, and technology.
+  </p>
+
+  <p>
+    Through Neurorder Research, the Alternative Credit Scoring Project, and the iNtsikelelo Foundation,
+    we aim to create a smarter and more inclusive future.
+  </p>
+</section>
+
+<script>
+function toggleMobileMenu() {
+  document.getElementById("mobileMenu").classList.toggle("open");
+  document.querySelector(".mobile-menu-btn").classList.toggle("active");
+}
+</script>
+
+</body>
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+class="footer-logo">
+
+<h2>NEURORDER</h2>
+
+<p>
+New Order.<br>
+Smarter Future.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Research</h3>
+
+<a href="research.html">Digital Public Infrastructure</a>
+
+<a href="credit-scoring.html">Credit Scoring</a>
+
+<a href="news.html">Latest Research</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Company</h3>
+
+<a href="about.html">About</a>
+
+<a href="foundation.html">Foundation</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Resources</h3>
+
+<div class="footer-column">
+
+    <h3>Legal</h3>
+
+    <a href="documents/NEURORDER_Legal_Documents.pdf#page=1"
+       target="_blank">
+       Privacy Policy
+    </a>
+
+    <a href="documents/NEURORDER_Legal_Documents.pdf#page=7"
+       target="_blank">
+       Terms & Conditions
+    </a>
+
+</div>
+
+<a href="#">Careers</a>
+
+</div>
+
+</div>
+
+<div class="footer-divider"></div>
+
+<div class="footer-bottom">
+
+<div class="footer-socials">
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-medium-m"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+<a href="#"><i class="fas fa-rss"></i></a>
+
+</div>
+
+<p class="footer-copy">
+© 2026 Neurorder Research. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+</html>
