@@ -1026,3 +1026,126 @@ nav a:hover {
   position: relative;
   z-index: 50;
 }
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    height: 70px;
+    padding: 0 18px;
+  }
+
+  .nav-logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    z-index: 1001;
+  }
+
+  .mobile-menu-btn span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+  }
+
+  .mobile-menu-panel {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 75%;
+    height: calc(100vh - 70px);
+    background: #02050a;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    gap: 24px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-menu-panel.open {
+    right: 0;
+  }
+
+  .mobile-menu-panel a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding: 120px 24px 60px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    word-break: normal;
+  }
+
+  .hero p {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .content {
+    padding: 50px 24px;
+  }
+
+  .content h2 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .site-footer {
+    padding: 50px 24px 25px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-brand,
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-logo {
+    max-width: 120px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
