@@ -293,14 +293,6 @@ button:hover {
   }
 }
 
-}
-.contact-info-box{
-
-...
-
-animation-delay:6.1s;
-
-}
 @media (max-width: 900px) {
 
   .contact-page {
@@ -330,5 +322,62 @@ animation-delay:6.1s;
   .contact-form-card {
     max-width: 100%;
     padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 110px 20px 60px;
+    gap: 40px;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .contact-left,
+  .contact-right,
+  .terminal-intro,
+  .contact-info-box,
+  .contact-form-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-left,
+  .terminal-intro {
+    align-items: center;
+  }
+
+  .typing-one,
+  .typing-two {
+    white-space: normal;
+    width: auto;
+    max-width: 100%;
+    border-right: none;
+    animation: none;
+    opacity: 1;
+  }
+
+  .typing-one {
+    font-size: 30px;
+  }
+
+  .typing-two {
+    font-size: 20px;
+  }
+
+  .fingerprint-img {
+    width: 220px;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .contact-form-card {
+    padding: 24px;
   }
 }

@@ -395,3 +395,52 @@ font-size:40px;
 }
 
 }
+@media (max-width: 768px) {
+  .foundation-hero {
+    min-height: 80vh;
+    padding: 120px 20px 70px;
+  }
+
+  .foundation-hero h1 {
+    font-size: 42px;
+    line-height: 1.05;
+  }
+
+  .foundation-hero p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .foundation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .secondary-btn {
+    margin-left: 0;
+  }
+
+  .foundation-intro,
+  .foundation-process,
+  .foundation-cta {
+    padding: 70px 20px;
+  }
+
+  .foundation-grid,
+  .process-row {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-card,
+  .process-step,
+  .donation-box {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .foundation-banner {
+    height: 320px;
+  }
+}
