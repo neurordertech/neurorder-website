@@ -351,3 +351,210 @@ button:hover {
     box-sizing: border-box;
   }
 }
+
+/* ==================================================
+   GLOBAL MOBILE OVERFLOW FIX
+   Stops pages sliding left/right on phones
+================================================== */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stop text from forcing page wider than screen */
+h1,
+h2,
+h3,
+p,
+a,
+span,
+div {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* ==================================================
+   PHONE LAYOUT
+================================================== */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  section,
+  header,
+  footer,
+  main,
+  .content,
+  .hero,
+  .research-summary,
+  .research-section,
+  .contact-page,
+  .foundation-section,
+  .site-footer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Header */
+  .site-header {
+    width: 100%;
+    height: 70px;
+    padding: 0 16px;
+  }
+
+  .nav-logo {
+    max-width: 145px;
+    height: auto;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    z-index: 1001;
+  }
+
+  .mobile-menu-btn span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+  }
+
+  .mobile-menu-panel {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: calc(100vh - 70px);
+    background: #02050a;
+    padding: 35px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-menu-panel.open {
+    right: 0;
+  }
+
+  .mobile-menu-panel a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 75vh;
+    padding: 120px 20px 60px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 11vw, 48px);
+    line-height: 1.05;
+    max-width: 100%;
+  }
+
+  .hero p {
+    font-size: 16px;
+    letter-spacing: 3px;
+    max-width: 100%;
+  }
+
+  /* General content */
+  .content {
+    padding: 45px 20px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Cards / boxes */
+  .card,
+  .box,
+  .research-card,
+  .contact-form-card,
+  .contact-info-box,
+  .footer-column,
+  .footer-brand {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Contact page */
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 120px 20px 60px;
+    gap: 40px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .typing-one,
+  .typing-two {
+    white-space: normal;
+    width: auto;
+    max-width: 100%;
+    border-right: none;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+}
